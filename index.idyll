@@ -566,8 +566,23 @@ Additional editorial and graphical work done by [b][a href:"http://kaiselgruber.
 All images and videos courtesy of the author unless otherwise noted.
 [/AuthorBio]
 
-[NextArticle slug:parametricSlug fullWidth:true /]
+[FullWidth]
+[div className:'contrast-light']
+###First, we need to get a general overview of  how COVID-19 has affected the population as a whole in the past year.  
+[TableauEmbed link:"https://public.tableau.com/views/Book2_16216534763910/Sheet1?:language=en&:retry=yes&:display_count=y&:origin=viz_share_link" width:"100%" height:"400"/]
+###Following initial rollout of the vaccine in December, we can see an obvious flattening of the curve in new cases, but what about COVID-19's lethality?
+###Next, we can see how the rate of cases is compares to the rate of deaths caused by COVID-19.
+[/div]
+[/FullWidth]
 
+[FullWidth]
+[/]
+[div id:"map"/]
+[div id:"story"/]
+[/FullWidth]
+
+
+[NextArticle slug:parametricSlug fullWidth:true /]
 [Footer fullWidth:true /]
 
 // Uncomment before pub
