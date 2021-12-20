@@ -18,45 +18,11 @@
     <meta property="og:description" content="Things are out of joint in the delta of the Mekong, Southeast Asia’s largest river." />
     <meta property="description" content="Things are out of joint in the delta of the Mekong, Southeast Asia’s largest river." />
 
-    <link rel="stylesheet" href="static/idyll_styles.css" />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
     <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
     <script src="https://unpkg.com/scrollama"></script>
-    <script>
-      if (!Object.assign) {
-        Object.defineProperty(Object, 'assign', {
-          enumerable: false,
-          configurable: true,
-          writable: true,
-          value: function(target) {
-            'use strict';
-            if (target === undefined || target === null) {
-              throw new TypeError('Cannot convert first argument to object');
-            }
-
-            var to = Object(target);
-            for (var i = 1; i < arguments.length; i++) {
-              var nextSource = arguments[i];
-              if (nextSource === undefined || nextSource === null) {
-                continue;
-              }
-              nextSource = Object(nextSource);
-
-              var keysArray = Object.keys(Object(nextSource));
-              for (var nextIndex = 0, len = keysArray.length; nextIndex < len; nextIndex++) {
-                var nextKey = keysArray[nextIndex];
-                var desc = Object.getOwnPropertyDescriptor(nextSource, nextKey);
-                if (desc !== undefined && desc.enumerable) {
-                  to[nextKey] = nextSource[nextKey];
-                }
-              }
-            }
-            return to;
-          }
-        });
-      }
-    </script>
+    <link rel="stylesheet" href="static/idyll_styles.css" />
   </head>
   <body>
     <div id="idyll-mount"><div data-reactroot=""><div class="idyll-root"><div class=" idyll-text-container"></div><div class="parametric-article-nav"><div><div style="font-family:Graphik Web;text-decoration:none">Parametric Press</div></div><div class="parametric-nav-links" style="display:flex;width:100%;justify-content:space-between;font-family:Graphik Web;text-decoration:none;color:#D8FFA2"><a href="/">The Climate Issue</a><div class="parametric-nav-toc" style="cursor:pointer;text-decoration:none;font-size:48px;position:relative;top:-18px">☰</div></div><div class="parametric-issue-toc" style="position:fixed;width:533px;right:-533px;top:0;bottom:0;padding:1em;padding-top:2em;background:#D8FFA2;overflow:auto;max-width:100vw;z-index:999;transition:all 0.75s"><div style="cursor:pointer;text-align:right;font-family:Graphik Web;position:relative;top:-1em;font-size:36px;margin-bottom:0">✖</div><div style="text-align:right"><div style="margin-bottom:1em;display:flex;flex-direction:row;justify-content:flex-end"><div><div style="font-family:Graphik Web;font-weight:500"><a style="color:#222" href="/issue-02/carbon-history/"><span>Your Personal</span><br/><span>Carbon History</span></a></div><div style="font-style:italic;font-weight:400;font-family:Graphik Web">Aatish Bhatia</div></div><div style="margin-left:1em;font-family:Graphik Web;font-weight:500">0<!-- -->1</div></div></div><div style="text-align:right"><div style="margin-bottom:1em;display:flex;flex-direction:row;justify-content:flex-end"><div><div style="font-family:Graphik Web;font-weight:500"><a style="color:#222" href="/issue-02/corporations/"><span>The Corporations</span><br/><span>Behind Climate Change</span></a></div><div style="font-style:italic;font-weight:400;font-family:Graphik Web">Geoffrey Litt, Seth Thompson</div></div><div style="margin-left:1em;font-family:Graphik Web;font-weight:500">0<!-- -->2</div></div></div><div style="text-align:right"><div style="margin-bottom:1em;display:flex;flex-direction:row;justify-content:flex-end"><div><div style="font-family:Graphik Web;font-weight:500"><a style="color:#222" href="/issue-02/algae/"><span>Tiny Algae and the Political Theater</span><br/><span>of Planting One Trillion Trees</span></a></div><div style="font-style:italic;font-weight:400;font-family:Graphik Web">Benjamin Cooley</div></div><div style="margin-left:1em;font-family:Graphik Web;font-weight:500">0<!-- -->3</div></div></div><div style="text-align:right"><div style="margin-bottom:1em;display:flex;flex-direction:row;justify-content:flex-end"><div><div style="font-family:Graphik Web;font-weight:500"><a style="color:#222" href="/issue-02/sinking-delta/"><span>Drought of the Sinking Delta</span></a></div><div style="font-style:italic;font-weight:400;font-family:Graphik Web">Christina Orieschnig</div></div><div style="margin-left:1em;font-family:Graphik Web;font-weight:500">0<!-- -->4</div></div></div><div style="text-align:right"><div style="margin-bottom:1em;display:flex;flex-direction:row;justify-content:flex-end"><div><div style="font-family:Graphik Web;font-weight:500"><a style="color:#222" href="/issue-02/streaming/"><span>The Hidden Cost</span><br/><span>of Digital Consumption</span></a></div><div style="font-style:italic;font-weight:400;font-family:Graphik Web">Halden Lin, Aishwarya Nirmal, Shobhit Hathi, Lilian Liang</div></div><div style="margin-left:1em;font-family:Graphik Web;font-weight:500">0<!-- -->5</div></div></div><div style="text-align:right"><div style="margin-top:2em;margin-bottom:1em;display:flex;flex-direction:row;justify-content:flex-end"><div style="font-family:Graphik Web;font-weight:500"><a style="color:#222" href="/issue-02/editors-note/">Editors’ Note</a></div></div></div></div></div><div class="article-header" style="margin-top:0;margin:0 auto"><div class="parametric-header-text"><div class="parametric-header-hed" style="position:relative;z-index:2"><div class="parametric-header-hed-text"><div><div class="parametric-long-title"><span>Drought of the Sinking Delta</span></div></div><div class="byline-container" style="display:flex;flex-direction:row;color:#000000;font-weight:500"><div><div style="font-weight:bold">Created by</div><div><div><a href="http://typingquill.com/">Christina Orieschnig</a></div></div></div><div style="margin-left:0"><div style="font-weight:bold">October 19, 2020</div><div><a href="https://github.com/ParametricPress/02-sinking-delta">Source Code</a><br/><a href="https://parametric-press-archives.s3-us-west-2.amazonaws.com/issue-02.wacz">Offline Archive</a><br/><a href="https://zenodo.org/badge/latestdoi/245054411">DOI</a></div></div></div></div></div></div><div class="parametric-header-image" style="position:absolute;top:0;right:0;left:0;bottom:0;background:url(static/images/header.jpg);background-size:cover"></div></div><div class=" idyll-text-container"><div class="lede lede-a">

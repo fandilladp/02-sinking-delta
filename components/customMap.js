@@ -14,7 +14,6 @@ const parkLayer = {
   type: 'fill',
   source: 'mapbox',
   'source-layer': 'resikoBanjirTanggamus',
-  filter: ['==', 'class', 'park'],
 };
 
 class CustomMap extends React.Component {
@@ -70,9 +69,21 @@ class CustomMap extends React.Component {
           longitude: 104.62852,
           zoom: 9.90,
           pitch: 0.00,
-          bearing: -50.92
-        }});  
-      }, 10000)
+          bearing: -50.92,
+          transitionDuration: 5000,
+        }}); 
+        setTimeout(() => {
+          this.setState({viewport: {
+            latitude: -5.50425 ,
+            longitude: 104.4957,
+            zoom: 11.87,
+            pitch: 60.0,
+            bearing: 101.08,
+              transitionDuration: 5000,
+            }});  
+          }, 5000);
+      }, 10000);
+   
   
       // if(scrollPostion == 96){
       //   this.setState({viewport: {
@@ -100,6 +111,7 @@ class CustomMap extends React.Component {
       //   }});
       // }
     }
+
   
     render() {
       return (
