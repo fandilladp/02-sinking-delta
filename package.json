@@ -30,6 +30,7 @@
     "mapbox-gl": "^2.6.1",
     "parametric-components": "^2.1.40",
     "parametric-styles": "^2.2.31",
-    "react-map-gl": "^6.1.18"
+    "react-map-gl": "^6.1.18",
+    "react-mapbox-gl": "^5.1.1"
   }
 }

@@ -575,11 +575,8 @@ All images and videos courtesy of the author unless otherwise noted.
 [/div]
 [/FullWidth]
 
-[FullWidth]
-[div id:"map"/]
-[div id:"story"/]
-[/FullWidth]
 
+[CustomMap fullWidth:true/]
 
 [NextArticle slug:parametricSlug fullWidth:true /]
 [Footer fullWidth:true /]
